@@ -1,6 +1,10 @@
 name: Hello Agile
 
-on: [push]
+on:
+  push:
+    branches: [test]
+  pull_request: #Comment
+    branches: [test]
 
 jobs:
   say_hello:
